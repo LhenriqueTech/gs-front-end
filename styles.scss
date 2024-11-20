@@ -1,0 +1,157 @@
+$primary-color: #0288d1;  
+$secondary-color: #4CAF50;  
+$background-color: #E8F5E9; 
+$footer-bg-color: #388E3C;  
+$text-color: #333;          
+$highlight-color: #FFEB3B;  
+$button-hover-color: #F57F17; 
+$font-size-base: 16px;
+$padding-footer: 0.5rem;
+
+// Mixins para media queries
+@mixin responsive($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+body, html {
+    background-color: $background-color;  
+    height: 100%;
+    margin: 0;
+    font-size: $font-size-base;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: $text-color; 
+}
+
+
+header {
+    background-color: $secondary-color;  
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+
+    .navbar {
+        width: 100%;
+        .navbar-brand {
+            font-weight: bold;
+            color: white; 
+        }
+        .navbar-nav {
+            gap: 2rem; 
+        }
+        .nav-link {
+            color: white;  
+            &:hover {
+                color: $primary-color;  
+            }
+        }
+    }
+}
+
+main {
+    flex: 1;
+    .hero {
+        margin-top: 2rem;
+        text-align: center;
+        img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+        }
+    }
+    .grid-tipos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 2rem 0;
+
+        @include responsive(768px) {
+            grid-template-columns: repeat(3, 1fr); 
+        }
+
+        .card {
+            background-color: $primary-color;  
+            color: white;  
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            h3 {
+                color: white;  
+            }
+
+            p {
+                color: #f1f1f1;  
+            }
+
+            .btn {
+                background-color: $highlight-color; 
+                color: $text-color;
+                padding: 0.75rem 1.5rem;
+                border-radius: 5px;
+                text-transform: uppercase;
+                border: none;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: $button-hover-color;  
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $footer-bg-color;  
+    color: white;  
+    padding: $padding-footer;
+    margin-top: auto;
+    text-align: center;
+    p {
+        margin: 0;
+    }
+}
+
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-indicators li {
+    visibility: hidden;
+}
+
+.grid-beneficios {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.beneficio-item {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio-item h5 {
+    font-size: 1.2rem;
+    color: $primary-color;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 3rem;
+    color: $primary-color;
+}

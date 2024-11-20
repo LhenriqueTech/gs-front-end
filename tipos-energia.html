@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Energia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand">Energia Limpa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tipos-energia.html">Tipos de Energia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="beneficios.html">Benefícios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1>Tipos de Energia Limpa</h1>
+            <div class="grid-tipos">
+                <article class="card">
+                    <h3>Energia Solar</h3>
+                    <p>A energia solar é captada por painéis solares que convertem luz em eletricidade.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoSolar">
+                        Ver Vídeo Solar
+                    </button>
+                </article>
+
+                <article class="card">
+                    <h3>Energia Eólica</h3>
+                    <p>A energia eólica é gerada a partir da força do vento que movimenta turbinas.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoEolica">
+                        Ver Vídeo Eólica
+                    </button>
+                </article>
+
+                <article class="card">
+                    <h3>Hidrelétrica</h3>
+                    <p>Usinas hidrelétricas convertem a força da água em movimento em energia elétrica.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoHidreletrica">
+                        Ver Vídeo Hidrelétrica
+                    </button>
+                </article>
+
+                <article class="card">
+                    <h3>Biomassa</h3>
+                    <p>A biomassa utiliza matéria orgânica para gerar energia, contribuindo para a sustentabilidade.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoBiomassa">
+                        Ver Vídeo Biomassa
+                    </button>
+                </article>
+
+                <article class="card">
+                    <h3>Geotérmica</h3>
+                    <p>A energia geotérmica aproveita o calor do interior da Terra para gerar eletricidade.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoGeotermica">
+                        Ver Vídeo Geotérmica
+                    </button>
+                </article>
+
+                <article class="card">
+                    <h3>Marés</h3>
+                    <p>A energia das marés utiliza o movimento das águas para gerar eletricidade.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#videoMares">
+                        Ver Vídeo Marés
+                    </button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="videoSolar" tabindex="-1" aria-labelledby="videoSolarLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoSolarLabel">Vídeo Educativo sobre Energia Solar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/h_dQrLS-j0M" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="videoEolica" tabindex="-1" aria-labelledby="videoEolicaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoEolicaLabel">Vídeo Educativo sobre Energia Eólica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/LU3l_jamZpo" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="videoHidreletrica" tabindex="-1" aria-labelledby="videoHidreletricaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoHidreletricaLabel">Vídeo Educativo sobre Energia Hidrelétrica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/o2LVOL7aUxM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="videoBiomassa" tabindex="-1" aria-labelledby="videoBiomassaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoBiomassaLabel">Vídeo Educativo sobre Energia Biomassa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/94FnIX25JJM" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="videoGeotermica" tabindex="-1" aria-labelledby="videoGeotermicaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoGeotermicaLabel">Vídeo Educativo sobre Energia Geotérmica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/txdO9A3cgwQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="videoMares" tabindex="-1" aria-labelledby="videoMaresLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoMaresLabel">Vídeo Educativo sobre Energia das Marés</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ixMBSmm0N-c" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-center mt-5">
+        <p>© 2024 Energia Limpa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const modals = document.querySelectorAll('.modal');
+
+        modals.forEach(modal => {
+            modal.addEventListener('hidden.bs.modal', function () {
+                const iframe = modal.querySelector('iframe');
+                if (iframe) {
+                    const src = iframe.src;
+                    iframe.src = ''; 
+                    iframe.src = src; 
+                }
+            });
+        });
+    </script>
+</body>
+</html>

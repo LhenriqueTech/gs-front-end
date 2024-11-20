@@ -1,0 +1,135 @@
+body, html {
+  background-color: #E8F5E9;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+}
+header .navbar {
+  width: 100%;
+}
+header .navbar .navbar-brand {
+  font-weight: bold;
+  color: white;
+}
+header .navbar .navbar-nav {
+  gap: 2rem;
+}
+header .navbar .nav-link {
+  color: white;
+}
+header .navbar .nav-link:hover {
+  color: #0288d1;
+}
+
+main {
+  flex: 1;
+}
+main .hero {
+  margin-top: 2rem;
+  text-align: center;
+}
+main .hero img {
+  width: 100%;
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .grid-tipos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+@media (min-width: 768px) {
+  main .grid-tipos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+main .grid-tipos .card {
+  background-color: #0288d1;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+main .grid-tipos .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+main .grid-tipos .card h3 {
+  color: white;
+}
+main .grid-tipos .card p {
+  color: #f1f1f1;
+}
+main .grid-tipos .card .btn {
+  background-color: #FFEB3B;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  border: none;
+  transition: background-color 0.3s;
+}
+main .grid-tipos .card .btn:hover {
+  background-color: #F57F17;
+}
+
+footer {
+  background-color: #388E3C;
+  color: white;
+  padding: 0.5rem;
+  margin-top: auto;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.carousel-indicators li {
+  visibility: hidden;
+}
+
+.grid-beneficios {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.beneficio-item {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.beneficio-item h5 {
+  font-size: 1.2rem;
+  color: #0288d1;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3rem;
+  color: #0288d1;
+}/*# sourceMappingURL=styles.css.map */
